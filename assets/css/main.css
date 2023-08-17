@@ -3940,6 +3940,35 @@ input, select, textarea {
 	height:3rem;
 }
 
+.panel-utility {
+	cursor:pointer;
+	background-color: rgb(24, 30, 100);
+	padding: 10px;
+    margin: 50px;
+	border-radius: 25px;
+	width: 600px;
+	height: 220px;
+	text-align: left;
+}
+
+.utility-button-ok {
+	margin:10px;
+	width:9rem;
+	height:4rem;
+}
+
+.utility-button-clear {
+	margin-left:auto;
+}
+
+.textArea {
+	width: 80%;
+    margin: 50px;
+	padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allow vertical resizing *
+}
+
 /* .push-top{
 	margin-right:auto;
 } */
