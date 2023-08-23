@@ -3916,33 +3916,26 @@ input, select, textarea {
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	/* grid-template-columns: repeat(auto-fill, minmax(300px, 3fr)) */
-	/* gap: 10px; */
 }
 
 .panel {
-	cursor:pointer;
 	background-color: rgb(24, 30, 100);
 	padding: 10px;
     margin: 50px;
 	border-radius: 25px;
 	width: 340px;
-	height: 320px;
+	height: 310px;
 	text-align: center;
+}
+
+.dashboard-button {
+	font-size:0.5em;
+	width:11rem;
 }
 
 .list {
 	list-style:none;
 	text-align:left;
-}
-
-.push-right {
-	text-align: center;
-}
-
-.dashboard-button {
-	width:7rem;
-	height:3rem;
 }
 
 .panel-utility {
@@ -3973,3 +3966,7 @@ input, select, textarea {
     border: 1px solid #ccc;
     resize: vertical; 
 }
+
+/* .wrapper {
+	background-color:#ffffff;
+} */
