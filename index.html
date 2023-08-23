@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Desktop Dashboard</title>
@@ -12,37 +7,37 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
-					<nav>
+					<nav class="main-menu">
 						<ul>
-							<li class="push-top">Version 1.0.0</a></li>
 							<li><a href="#intro">Dashboard</a></li>
-							<li><a href="#one">Utility Tools</a></li>
-								<ul>
-									<li>
-										<a href="#one">Look Up User</a>
-										<a href="#one">Ping PC</a>
-										<a href="#one">Data Migration</a>
+							<li><a href="#one">Utility Tools</a>
+								<ul class="sub-menu">
+									<li><a href="#one">Look Up User</a></li>
+									<li><a href="#one">Ping PC</a></li>
+									<li><a href="#one">Data Migration</a></li>
+								</ul>
+							</li>		
+							<li><a href="#two">Active Directory</a>
+								<ul class="sub-menu">
+									<li><a href="#two">Reset Password</a></li>
+									<li><a href="#two">Create User</a></li>
+									<li><a href="#two">Delete User</a></li>
 									</li>
 								</ul>
-							<li><a href="#two">Active Directory</a></li>
-								<ul>
+							</li>
+							<li><a href="#three">Troubleshooting Tools</a>
+								<ul class="sub-menu">
 									<li>
-										<a href="#two">Reset Password</a>
-										<a href="#two">Create User</a>
-										<a href="#two">Delete User</a>
+										<a href="#three">Reset Password</a>
 									</li>
-								</ul>
-							<li><a href="#three">Troubleshooting Tools</a></li>
-							<ul>
-								<li>
-									<a href="#three">Reset Password</a>
-								</li>
-							</ul>	
+								</ul>	
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -282,6 +277,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/script.js"></script>
 	</body>
 </html>

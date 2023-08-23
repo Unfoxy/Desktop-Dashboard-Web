@@ -3908,6 +3908,11 @@ input, select, textarea {
 
 		}
 
+
+.sub-menu {
+	list-style-type:circle;
+}
+
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -3966,9 +3971,5 @@ input, select, textarea {
     margin: 50px;
 	padding: 10px;
     border: 1px solid #ccc;
-    resize: vertical; /* Allow vertical resizing *
+    resize: vertical; 
 }
-
-/* .push-top{
-	margin-right:auto;
-} */
