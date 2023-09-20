@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Data Migration</title>
@@ -13,51 +8,51 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
 		<!-- Header -->
 			<header id="header">
 				<a href="index.html" class="title">Utility Tools - Data Migration</a>
 				<nav>
 					<ul>
-						<li><a href="utilityTools-lookUpUsers.html">Look Up User</a></li>
-						<li><a href="utilityTools-pingPc.html" class="active">Ping PC</a></li>
-						<li><a href="utilityTools-dataMigration.html">Data Migration</a></li>
+						<li class="main-list"><a href="index.html">Main</a></li>
+						<li class="main-list"><a href="utilityTools-lookUpUsers.html">Look Up User</a></li>
+						<li class="main-list"><a href="utilityTools-pingPc.html">Ping PC</a></li>
+						<li class="main-list"><a href="utilityTools-dataMigration.html" class="active">Data Migration</a></li>
 					</ul>
 				</nav>
 			</header>
-
 		<!-- Wrapper -->
 			<div id="wrapper">
-
 				<!-- Main -->
 					<section id="main" class="wrapper">
-						<div class="panel-utility">
-							<form>
-								<label>Search User:</label>
-								<input type="text">
-							</form>
+						<div class="datamigration-panel">
+							<label class="datamigration-label">New PC Device ID:</label>
+							<label class="datamigration-label">Old PC Device ID:</label>
+							<label class="datamigration-label">NTID:</label>
+							<label class="datamigration-label">Select Objects:</label>
+							
+							<input class="datamigration-text" type="text">
+							<input class="datamigration-text" type="text">
+							<input class="datamigration-text" type="text">
+							<select class="datamigration-text" name="object">
+								<option value="edge">Edge Bookmarks</option>
+								<option value="chrome">Chrome Bookmarks</option>
+								<option value="outlook signature">Outlook Signatures</option>
+								<option value="quick access">Quick Access</option>
+							</select>
 
-							<button class="utility-button-ok">OK</button><button class="utility-button-clear">Clear Result</button>
+							<button class="utility-button-ok">OK</button>
+							<button class="datamigration-clear">Clear Result</button>
+							<labe class="font-color push-right">*End User Must Sign on Both PCs</labe>
 						</div>
 						<textarea class="textArea" name="textArea" cols:"4" rows:"50" ></textarea>
-						
-
-						
-						<!-- <div class="inner">
-							<h1 class="major">A Generic Page</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div> -->
 					</section>
-
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Desktop Dashboard. All rights reserved.</li>
 					</ul>
 				</div>
 			</footer>
@@ -70,6 +65,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

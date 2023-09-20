@@ -3938,8 +3938,21 @@ input, select, textarea {
 	text-align:left;
 }
 
-.panel-utility {
-	cursor:pointer;
+.textArea {
+	width: 80%;
+    margin: 50px;
+	padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical; 
+}
+
+.font-color {
+	color:yellow;
+}
+
+.utility-panel {
+	display: flex;
+	flex-wrap: wrap;
 	background-color: rgb(24, 30, 100);
 	padding: 10px;
     margin: 50px;
@@ -3949,24 +3962,52 @@ input, select, textarea {
 	text-align: left;
 }
 
-.utility-button-ok {
-	margin:10px;
-	width:9rem;
-	height:4rem;
+.utility-label{
+	margin-top:5px;
+	margin-bottom:10px;
 }
+
+.utility-text {
+	margin-bottom:10px;
+}
+
+.utility-button-ok {
+	margin-left:10px;
+}
+
 
 .utility-button-clear {
 	margin-left:auto;
 }
 
-.textArea {
-	width: 80%;
-    margin: 50px;
-	padding: 10px;
-    border: 1px solid #ccc;
-    resize: vertical; 
+.datamigration-clear {
+	margin-left:10px;
 }
 
-/* .wrapper {
-	background-color:#ffffff;
-} */
+.datamigration-panel {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(24, 30, 100);
+	padding: 10px;
+    margin: 50px;
+	border-radius: 25px;
+	width: 1500px;
+	height: 220px;
+	text-align: left;
+}
+
+.datamigration-label {
+	width: calc(25.00% - 20px);
+	margin:10px;
+}
+
+.datamigration-text {
+	width: calc(25.00% - 20px)!important;
+	margin:10px;
+	margin-top:0px;
+	margin-bottom:10px;
+}
+
+.push-right {
+	margin-left:auto;
+}

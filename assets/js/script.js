@@ -20,3 +20,21 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+var mainList = document.querySelector("sub-menu");
+mainList.addEventListener("click", function() {
+  var clickedText = event.target.textContent.trim();
+  switch (clickedText) {
+    case "Look Up User":
+      window.location.href = "utilityTools-lookUpUsers.html";
+      break;
+    case "Ping PC":
+      window.location.href = "utilityTools-pingPc.html";
+      break;
+    case "Data Migration":
+      window.location.href = "utilityTools-dataMigration.html";
+      break;
+    default:
+      break;
+  }
+});
