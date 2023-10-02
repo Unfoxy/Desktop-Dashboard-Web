@@ -1,11 +1,5 @@
 @import url(fontawesome-all.min.css);
 
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -3908,49 +3902,47 @@ input, select, textarea {
 
 		}
 
-
 .sub-menu {
 	list-style-type:circle;
 }
 
-.container {
+/* Change from me */
+/* Generic CSS */
+.push-right {
+	margin-left:auto;
+}
+.font-color-yellow {
+	color:yellow;
+}
+/* Specific HTML */
+/* Main-Dashboard*/
+.container-main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
-
-.panel {
+.panel-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background-color: rgb(24, 30, 100);
 	padding: 10px;
     margin: 50px;
 	border-radius: 25px;
-	width: 340px;
-	height: 310px;
-	text-align: center;
+	width: 370px;
+	height: 330px;
 }
-
-.dashboard-button {
+.button-main {
 	font-size:0.5em;
 	width:11rem;
 }
-
-.list {
-	list-style:none;
-	text-align:left;
-}
-
-.textArea {
-	width: 80%;
-    margin: 50px;
-	padding: 10px;
-    border: 1px solid #ccc;
-    resize: vertical; 
-}
-
-.font-color {
-	color:yellow;
-}
-
-.utility-panel {
+.list-main {
+	list-style: none;
+	padding: 0;
+	text-align: left;
+  }
+/* Sub-Menu */
+.panel-sub {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: rgb(24, 30, 100);
@@ -3961,30 +3953,28 @@ input, select, textarea {
 	height: 220px;
 	text-align: left;
 }
-
-.utility-label{
+.label-sub{
 	margin-top:5px;
 	margin-bottom:10px;
 }
-
-.utility-text {
+.text-sub {
 	margin-bottom:10px;
 }
-
-.utility-button-ok {
+.button-ok-sub {
 	margin-left:10px;
 }
-
-
-.utility-button-clear {
+.button-clear-sub {
 	margin-left:auto;
 }
-
-.datamigration-clear {
-	margin-left:10px;
+.textArea-sub {
+	width: 80%;
+    margin: 50px;
+	padding: 10px;
+    border: 1px solid #ccc;
+    resize: vertical; 
 }
-
-.datamigration-panel {
+/* Datamigration */
+.panel-sub-datamigration {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: rgb(24, 30, 100);
@@ -3995,19 +3985,36 @@ input, select, textarea {
 	height: 220px;
 	text-align: left;
 }
-
-.datamigration-label {
+.label-sub-datamigration {
 	width: calc(25.00% - 20px);
 	margin:10px;
 }
-
-.datamigration-text {
+.text-sub-datamigration {
 	width: calc(25.00% - 20px)!important;
 	margin:10px;
 	margin-top:0px;
 	margin-bottom:10px;
 }
-
-.push-right {
-	margin-left:auto;
+.button-clear-sub-datamigration {
+	margin-left:10px;
+}
+/* Create User */
+.container-sub-createUser {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	/* justify-content: space-between; */
+}
+.panel-sub-createUser-left,
+.panel-sub-createUser-right {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 48%;
+	background-color: rgb(24, 30, 100);
+	padding: 10px;
+    margin: 50px;
+	border-radius: 25px;
+	width: 1500px;
+	height: 1000px;
+	text-align: left;
 }
