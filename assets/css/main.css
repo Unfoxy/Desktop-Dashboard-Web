@@ -3911,6 +3911,9 @@ input, select, textarea {
 .push-right {
 	margin-left:auto;
 }
+.push-top {
+	margin-top:15px;
+}
 .font-color-yellow {
 	color:yellow;
 }
@@ -4008,13 +4011,22 @@ input, select, textarea {
 .panel-sub-createUser-left,
 .panel-sub-createUser-right {
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
+	flex-direction: column;
 	flex-basis: 48%;
 	background-color: rgb(24, 30, 100);
 	padding: 10px;
     margin: 50px;
 	border-radius: 25px;
 	width: 1500px;
-	height: 1000px;
+	height: 2200px;
 	text-align: left;
+}
+.textArea-sub-createUser-right {
+	width:1000px;
+	height:400px;
+}
+.textArea-sub-createUser-right-remove {
+	width:80px;
+	height:80px;
 }

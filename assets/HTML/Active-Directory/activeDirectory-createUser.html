@@ -14,9 +14,9 @@
 				<nav>
 					<ul>
 						<li><a href="/assets/HTML/index.html">Main</a></li>
-						<li><a href="activeDirectory-resetPassword.html" class="active">Reset Passowrd</a></li>
-						<li><a href="activeDirectory-createUser.html">Create User</a></li>
-						<li><a href="">Delete User</a></li>
+						<li><a href="activeDirectory-resetPassword.html">Reset Passowrd</a></li>
+						<li><a href="activeDirectory-createUser.html" class="active">Create User</a></li>
+						<li><a href="activeDirectory-deleteUser.html">Delete User</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -26,31 +26,123 @@
 					<section id="main" class="wrapper">
 						<div class="container-sub-createUser">
 							<div class="panel-sub-createUser-left">
-								<label>First Name:</label>
-								<input type="text">
-								<label>Last Name:</label>
-								<input type="text">
-								<label>Middle Initial:</label>
-								<input type="text">
-								<label>User Type:</label>
-								<select name="userType">
-									<option value="employee">Employee</option>
-									<option value="external">External</option>
-									<option value="contractor">Contractor</option>
-								</select>
-								<label>Site Code:</label>
-								<select name="siteCode">
-									<option value="mvw">MVW</option>
-									<option value="bmc">BMC</option>
-									<option value="cho">CHO</option>
-									<option value="lar">LAR</option>
-									<option value="hdc">HDC</option>
-								</select>
-							</div>
-							<div class="panel-sub-createUser-right">
-	
+								<div>
+									<label>First Name:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Last Name:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Middle Initial:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>User Type:</label>
+									<select name="userType">
+										<option value="employee">Employee</option>
+										<option value="external">External</option>
+										<option value="contractor">Contractor</option>
+									</select>
+								</div>
+								<div>
+									<label>Site Code:</label>
+									<select name="siteCode">
+										<option value="mvw">MVW</option>
+										<option value="bmc">BMC</option>
+										<option value="cho">CHO</option>
+										<option value="lar">LAR</option>
+										<option value="hdc">HDC</option>
+									</select>
+								</div>
+								<div class="push-top">
+									<input type="checkbox" id="enableEmail">
+									<label for="enableEmail">Enable Email</label>
+									<input type="checkbox" id="enableOkta">
+									<label for="enableOkta">Enable Okta</label>
+								</div>
+									<label>o365 License:</label>
+									<select name="license">
+										<option value="employee">Employee</option>
+										<option value="external">External</option>
+										<option value="contractor">Contractor</option>
+									</select>
+								<div>
+									<label>Supervisor:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Supervisor:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Department:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Position:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Phone:</label>
+									<input type="text">
+								</div>
+								<div class="push-top">
+									<input type="checkbox" id="ipPhone">
+									<label for="ipPhone">IP Phone</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Office:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>CO. Name:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>CO. Email:</label>
+									<input type="text">
+								</div>
+								<div>
+									<button class="push-top">Generate NTID - Email</button>
+								</div>
+								<div>
+									<label>New User Account:</label>
+									<input type="text">
+								</div>
+								<div>
+									<label>Email Address:</label>
+									<input type="text">
+								</div>
+								<div>
+									<button class="push-top">Import From Mojo</button>
+									<button class="push-top">Clear Form</button>
+								</div>
 							</div>
 
+							<div class="panel-sub-createUser-right">
+								<div>
+									<label>Copy User Memberships From:<span class="font-color-yellow">  NTID/DisplayName/Email</span></label>
+									<input type="text">
+									<button class="push-top">Display Memberships</button>
+									<button class="push-top">Clear Memberships</button>
+								</div>
+								<div>
+									<textarea class="textArea-sub-createUser-right push-top" name="textArea"></textarea>
+									<textarea class="textArea-sub-createUser-right-remove push-top" name="textArea"></textarea>
+									<button class="push-top">Remove # Membership</button>
+									<button class="push-top">Create Account</button>
+								</div>
+								<div>
+									<label>Account Creation Result</label>
+									<textarea class="textArea-sub-createUser-right" name="textArea"></textarea>
+								</div>
+								
+							</div>
+
+							<!-- <input type="text" id="1" name="2" value="email"> -->
 							<!-- <textarea class="textArea-sub" name="textArea" cols:"4" rows:"50" ></textarea> -->
 						</div>
 					</section>
