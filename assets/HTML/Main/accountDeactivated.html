@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Utility Tools - Ping PC</title>
+		<title>Main - Account Deactivated</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
@@ -10,13 +10,15 @@
 	<body class="is-preload">
 		<!-- Header -->
 			<header id="header">
-				<a href="" class="title">Utility Tools - Ping PC</a>
+				<a href="" class="title">Main - Account Deactivated</a>
 				<nav>
 					<ul>
 						<li><a href="/assets/HTML/index.html">Main</a></li>
-						<li><a href="utilityTools-lookUpUsers.html">Look Up User</a></li>
-						<li><a href="utilityTools-pingPc.html" class="active">Ping PC</a></li>
-						<li><a href="utilityTools-dataMigration.html">Data Migration</a></li>
+						<li><a href="azureADSignIn60.html">Azure AD Sign In 60+</a></li>
+						<li><a href="passwordExpired.html">Password Expired Users</a></li>
+						<li><a href="accountDeactivated.html" class="active">Account Deactivated Users</a></li>
+						<li><a href="accountLocked.html">Account Locked Users</a></li>
+						<li><a href="accountExpired.html">Account Expired Users</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -25,8 +27,14 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="panel-sub">
-							<label class="label-sub">Device ID: <span class="font-color-yellow">e.g. AMMVW5ML81T3-L</span></label>
-							<input class="text-sub" type="text">
+							<label class="label-sub">Select Site</label>
+							<select class="" name="object">
+								<option value="mvw">MVW</option>
+								<option value="bmc">BMC</option>
+								<option value="cho">CHO</option>
+								<option value="lar">LAR</option>
+								<option value="hdc">HDC</option>
+							</select>
 							<button class="button-ok-sub">OK</button>
 							<button class="button-clear-sub">Clear Result</button>
 						</div>
