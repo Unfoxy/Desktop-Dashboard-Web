@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Active Directory - Delete User</title>
+		<title>Troubleshooting Tools - Remote Registry</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
@@ -10,13 +10,11 @@
 	<body class="is-preload">
 		<!-- Header -->
 			<header id="header">
-				<a href="" class="title">Active Directory - Delete User</a>
+				<a href="" class="title">Troubleshooting Tools - Remote Registry</a>
 				<nav>
 					<ul>
 						<li><a href="/assets/HTML/index.html">Main</a></li>
-						<li><a href="activeDirectory-resetPassword.html">Reset Passowrd</a></li>
-						<li><a href="activeDirectory-createUser.html">Create User</a></li>
-						<li><a href="activeDirectory-deleteUser.html" class="active">Delete User</a></li>
+						<li><a href="troubleshootingTools-remoteRegistry.html" class="active">Remote Registry</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -24,36 +22,23 @@
 			<div id="wrapper">
 				<!-- Main -->
 					<section id="main" class="wrapper">
-						<div class="panel-sub-deleteUser">
-							<div class="panel-half-sub-deleteUser-left">
-								<label class="label-sub">Username: </label>
+						<div class="panel-sub-remoteRegistry">
+							<div class="panel-half-sub-remoteRegistry-left">
+								<label class="label-sub">Device ID: </label>
 								<input class="text-sub" type="text">
-								<label class="label-sub font-color-yellow">NTID / DisplayName / Email</label>
+								<label class="label-sub font-color-yellow">e.g. AMMVW5ML81T3-L</label>
 								<div>
-									<button class="push-top">Display User</button>
-								</div>
-								<div>
-									<button class="push-top">Disable Account</button>
-								</div>
-								<div>
-									<button class="push-top">Clear EA 13</button>
+									<button class="push-top">OK</button>
+									<button class="push-top">Clear Result</button>
 								</div>
 							</div>
-							<div class="panel-half-sub-deleteUser-right">
-								<label class="label-sub">Description: </label>
-								<input class="text-sub" type="text">
-								<div>
-									<button>Update Description</button>
-								</div>
-								<div class="push-top-auto">
-									<button>Clear Result</button>
-									<button>Copy To Clipboard</button>
-									<button>Export to Mojo</button>
-								</div>
+							<div class="panel-half-sub-remoteRegistry-right">
+								<label class="label-sub">Select Object: </label>
+								<select name="object">
+									<option value="globe">Fix Globe Sign</option>
+								</select>
 							</div>
 						</div>
-
-
 						<textarea class="textArea-sub" name="textArea" cols:"4" rows:"50" ></textarea>
 					</section>
 			</div>

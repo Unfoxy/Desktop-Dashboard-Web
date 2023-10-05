@@ -3914,6 +3914,10 @@ input, select, textarea {
 .push-top {
 	margin-top:15px;
 }
+.push-top-auto {
+	margin-top: 125px;
+	/* align-self: flex-end; */
+}
 .font-color-yellow {
 	color:yellow;
 }
@@ -4029,4 +4033,43 @@ input, select, textarea {
 .textArea-sub-createUser-right-remove {
 	width:80px;
 	height:80px;
+}
+/* Delete User */
+.panel-sub-deleteUser {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(24, 30, 100);
+	padding: 10px;
+    margin: 50px;
+	border-radius: 25px;
+	width: 1500px;
+	height: 500px;
+	text-align: left;
+}
+.panel-half-sub-deleteUser-left {
+	flex: 1;
+	padding:20px;
+}
+.panel-half-sub-deleteUser-right {
+	flex: 2;
+	padding:20px;
+}
+/* Remote Registry */
+.panel-sub-remoteRegistry {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(24, 30, 100);
+	padding: 10px;
+    margin: 50px;
+	border-radius: 25px;
+	width: 1000px;
+	height: 500px;
+	text-align: left;
+}.panel-half-sub-remoteRegistry-left {
+	flex: 1;
+	padding:20px;
+}
+.panel-half-sub-remoteRegistry-right {
+	flex: 1;
+	padding:20px;
 }
